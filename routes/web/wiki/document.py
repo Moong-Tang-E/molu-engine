@@ -1,4 +1,5 @@
-from fastapi import APIRouter, Depends, HTTPException, status, RedirectResponse
+from fastapi import APIRouter, Depends, HTTPException, status
+from starlette.responses import RedirectResponse
 
 
 router = APIRouter()
