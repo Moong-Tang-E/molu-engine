@@ -1,0 +1,10 @@
+{
+    "MONGO_URI": "mongodb://tmddn3070:ss080826@172.30.1.46:27017/?authMechanism=DEFAULT",
+    "MONGO_DB": "wiki",
+    "USE_ADVANCED_SEARCH_ENGINE": true,
+    "USE_AIOSQLITE": true,
+    "ADVANCED_SEARCH_ENGINE_CLIENT": "http://172.30.1.46:7700",
+    "ADVANCED_SEARCH_ENGINE_INDEX": "wiki"
+
+    
+}
