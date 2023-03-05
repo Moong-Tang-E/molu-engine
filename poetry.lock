@@ -13,6 +13,18 @@ files = [
 ]
 
 [[package]]
+name = "aiosqlite"
+version = "0.18.0"
+description = "asyncio bridge to the standard sqlite3 module"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "aiosqlite-0.18.0-py3-none-any.whl", hash = "sha256:c3511b841e3a2c5614900ba1d179f366826857586f78abd75e7cbeb88e75a557"},
+    {file = "aiosqlite-0.18.0.tar.gz", hash = "sha256:faa843ef5fb08bafe9a9b3859012d3d9d6f77ce3637899de20606b7fc39aa213"},
+]
+
+[[package]]
 name = "anyio"
 version = "3.6.2"
 description = "High level compatibility layer for multiple asynchronous event loop implementations"
@@ -32,6 +44,18 @@ sniffio = ">=1.1"
 doc = ["packaging", "sphinx-autodoc-typehints (>=1.2.0)", "sphinx-rtd-theme"]
 test = ["contextlib2", "coverage[toml] (>=4.5)", "hypothesis (>=4.0)", "mock (>=4)", "pytest (>=7.0)", "pytest-mock (>=3.6.1)", "trustme", "uvloop (<0.15)", "uvloop (>=0.15)"]
 trio = ["trio (>=0.16,<0.22)"]
+
+[[package]]
+name = "better-profanity"
+version = "0.7.0"
+description = "Blazingly fast cleaning swear words (and their leetspeak) in strings"
+category = "main"
+optional = false
+python-versions = "==3.*"
+files = [
+    {file = "better_profanity-0.7.0-py3-none-any.whl", hash = "sha256:bd4c529ea6aa2db1aaa50524be1ed14d0fe5c664f1fd88c8bc388c7e9f9f00e8"},
+    {file = "better_profanity-0.7.0.tar.gz", hash = "sha256:8a6fdc8606d7471e7b5f6801917eca98ec211098262e82f62da4f5de3a73145b"},
+]
 
 [[package]]
 name = "camel-converter"
@@ -234,6 +258,22 @@ Jinja2 = ">=2.4"
 Markdown = ">=2.3.1"
 
 [[package]]
+name = "korcen"
+version = "0.3.3"
+description = "한국어 비속어 검열"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "korcen-0.3.3-py3-none-any.whl", hash = "sha256:95e6c4e5fa47461fe5e61a0116adf600e38d1f60f5bca5e382c3c85b99477b05"},
+    {file = "korcen-0.3.3.tar.gz", hash = "sha256:81790bbc6777161c53d06a252e323837f69cf666933fdc9fc5e9ab35c74d9285"},
+]
+
+[package.dependencies]
+better-profanity = "*"
+OrderedDict = "*"
+
+[[package]]
 name = "markdown"
 version = "3.4.1"
 description = "Python implementation of Markdown."
@@ -350,6 +390,17 @@ ocsp = ["pymongo[ocsp] (>=4.1,<5)"]
 snappy = ["pymongo[snappy] (>=4.1,<5)"]
 srv = ["pymongo[srv] (>=4.1,<5)"]
 zstd = ["pymongo[zstd] (>=4.1,<5)"]
+
+[[package]]
+name = "ordereddict"
+version = "1.1"
+description = "A drop-in substitute for Py2.7's new collections.OrderedDict that works in Python 2.4-2.6."
+category = "main"
+optional = false
+python-versions = "*"
+files = [
+    {file = "ordereddict-1.1.tar.gz", hash = "sha256:1c35b4ac206cef2d24816c89f89cf289dd3d38cf7c449bb3fab7bf6d43f01b1f"},
+]
 
 [[package]]
 name = "pydantic"
@@ -599,4 +650,4 @@ standard = ["colorama (>=0.4)", "httptools (>=0.5.0)", "python-dotenv (>=0.13)",
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "c072971d90ca467c7f78378230f0ecb130d44a692f1a989b7d04051a50f5dc5a"
+content-hash = "f27c152f4771708dc07d8dece03a1b8cfe433eb431836680ef3d77ac0113f9b5"
